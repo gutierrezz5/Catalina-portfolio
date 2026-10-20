@@ -705,3 +705,86 @@ footer p {
     margin: 0 0 22px 0;
     opacity: 0.8;
 }
+
+
+/* DESIGN ARTIFACTS SECTION */
+
+.artifacts {
+    padding: 100px 0;
+    border-top: 1px solid rgba(43, 27, 20, 0.25);
+}
+
+.artifacts > h2 {
+    font-size: clamp(42px, 6vw, 76px);
+    font-weight: 400;
+    letter-spacing: -3px;
+    line-height: 0.95;
+    margin: 20px 0 30px 0;
+}
+
+.artifacts-intro {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 480px;
+    margin-bottom: 70px;
+    opacity: 0.8;
+}
+
+.artifacts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.artifact-card {
+    border-top: 1px solid rgba(43, 27, 20, 0.35);
+    padding-top: 22px;
+}
+
+.artifact-card > span {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    opacity: 0.6;
+}
+
+.artifact-card h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 25px 0 15px 0;
+}
+
+.artifact-card p {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.7;
+    opacity: 0.7;
+}
+
+.artifact-card .artifact-placeholder {
+    margin-top: 35px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    opacity: 0.45;
+}
+
+@media (max-width: 700px) {
+    .artifacts {
+        padding: 75px 0;
+    }
+
+    .artifacts-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .artifacts > h2 {
+        letter-spacing: -2px;
+    }
+
+    .artifacts-intro {
+        margin-bottom: 50px;
+    }
+}
