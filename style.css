@@ -967,3 +967,157 @@ footer p {
         height: 600px;
     }
 }
+
+/* ACADEMIC PROFILE */
+
+.academic-profile {
+    padding: 110px 0;
+    border-top: 1px solid rgba(43, 27, 20, 0.2);
+}
+
+.academic-profile h2 {
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin: 20px 0 45px;
+}
+
+.academic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.academic-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 390px;
+    padding: 30px;
+    color: #2B1B14;
+    text-decoration: none;
+    border: 1px solid rgba(43, 27, 20, 0.2);
+    background: #F5F0E7;
+    transition: background 0.3s ease;
+}
+
+.academic-card:hover {
+    background: #EEE6D9;
+}
+
+.academic-number {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.academic-preview {
+    margin: 35px 0;
+    color: rgba(43, 27, 20, 0.22);
+    font-family: Georgia, serif;
+    font-size: clamp(27px, 4vw, 43px);
+    line-height: 1.05;
+    letter-spacing: -1px;
+}
+
+.academic-card h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.academic-card p {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0 0 25px;
+}
+
+.academic-link {
+    margin-top: auto;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid #2B1B14;
+    padding-bottom: 8px;
+    width: fit-content;
+}
+
+@media (max-width: 700px) {
+    .academic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .academic-profile {
+        padding: 75px 0;
+    }
+}
+
+/* AWARDS & PROGRAM PAGES */
+
+.award-detail,
+.program-courses {
+    margin-top: 65px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(43, 27, 20, 0.25);
+}
+
+.award-detail h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin: 30px 0 15px;
+    letter-spacing: -1px;
+}
+
+.award-detail p:not(.academic-number) {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.award-note {
+    color: rgba(43, 27, 20, 0.55);
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.program-courses {
+    max-width: 900px;
+}
+
+.course-row {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+    align-items: baseline;
+    padding: 19px 0;
+    border-bottom: 1px solid rgba(43, 27, 20, 0.16);
+}
+
+.course-row span {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: rgba(43, 27, 20, 0.55);
+}
+
+.course-row p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .award-detail h2 {
+        font-size: 30px;
+    }
+
+    .course-row {
+        grid-template-columns: 30px 1fr;
+        gap: 10px;
+    }
+
+    .course-row p {
+        font-size: 13px;
+    }
+}
